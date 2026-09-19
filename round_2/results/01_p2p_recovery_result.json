@@ -1,0 +1,25 @@
+{
+  "test": "01_p2p_recovery",
+  "passed": true,
+  "timestamp_utc": "2026-09-19T18:36:04Z",
+  "details": {
+    "initial_peer_count": 7,
+    "peers": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "unverified_rejected": true,
+    "redial_invariants": {
+      "base_delay_ms": 5000,
+      "max_delay_ms": 60000,
+      "lease_timeout_ms": 8000,
+      "jitter_applied": true,
+      "banned_peer_redial_suppressed": true
+    }
+  }
+}

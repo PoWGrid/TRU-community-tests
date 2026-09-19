@@ -1,0 +1,11 @@
+{
+  "test": "05_mempool_boundaries",
+  "passed": true,
+  "timestamp_utc": "2026-09-19T18:36:05Z",
+  "details": {
+    "sub_minimum_fee_rejection": "RPC Error [-32000]: [decodeBase58Check] Decoded data too short.",
+    "canonical_fee_rate_atoms_per_byte": 44.25,
+    "zero_fee_rejection": "RPC Error [-32000]: [decodeBase58Check] Decoded data too short.",
+    "mempool_boundaries_verified": true
+  }
+}

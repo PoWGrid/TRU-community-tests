@@ -1,0 +1,14 @@
+{
+  "test": "02_logging_rotation",
+  "passed": true,
+  "timestamp_utc": "2026-09-19T18:36:04Z",
+  "details": {
+    "container_logs_output": "total 158268\ndrwxr-xr-x 2 tru tru     4096 Sep 19 18:30 .\ndrwxr-xr-x 5 tru tru     4096 Sep 19 17:49 ..\n-rw-r--r-- 1 tru tru 27821534 Sep 19 18:36 Tru_debug.log\n-rw-r--r-- 1 tru tru 33554382 Sep 19 18:30 Tru_debug.log.1\n-rw-r--r-- 1 tru tru 33554358 Sep 19 18:19 Tru_debug.log.2\n-rw-r--r-- 1 tru tru 33554351 Sep 19 18:09 Tru_debug.log.3\n-rw-r--r-- 1 tru tru 33554388 Sep 19 18:04 Tru_debug.log.4\n",
+    "active_log_bytes": 27821534,
+    "max_bytes_limit": 33554432,
+    "max_retained_files": 4,
+    "max_total_storage_bytes": 167772160,
+    "structured_logging_verified": true,
+    "legacy_log_disabled": true
+  }
+}

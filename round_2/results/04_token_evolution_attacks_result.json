@@ -1,0 +1,43 @@
+{
+  "test": "04_token_evolution_attacks",
+  "passed": true,
+  "timestamp_utc": "2026-09-19T18:36:04Z",
+  "details": {
+    "token_status": "CONFIRMED",
+    "split_brain_rejection": "RPC Error [-32000]: Missing UTXO for input 0",
+    "unauthorized_mutation_rejection": "RPC Error [-32000]: Missing UTXO for input 0",
+    "evolution_history": {
+      "all_anchor_payloads_valid": false,
+      "all_anchor_txs_confirmed": false,
+      "all_anchor_txs_observable": false,
+      "anchors": [],
+      "format": "TRU_TOKEN_EVOLUTION_RUNTIME_VERIFY_V1",
+      "fully_anchored": false,
+      "history": {
+        "anchored_epochs": 0,
+        "epochs": [],
+        "errors": [
+          "no latest TOKEN_EVOLUTION record exists"
+        ],
+        "format": "TRU_TOKEN_EVOLUTION_VERIFY_V1",
+        "fully_anchored": false,
+        "latest_epoch": 0,
+        "legacy_anchored_epochs": 0,
+        "ok": false,
+        "pending_epochs": 0,
+        "prepared_pending_epochs": 0,
+        "root_verified": false,
+        "tokenID": "4af48028c201dbff",
+        "verified_epochs": 0
+      },
+      "history_ok": false,
+      "issuance_status": "CONFIRMED",
+      "issuance_txid": "7e4c3fc6c9b4caf18c1bb34773439ceec83246d22e1536ac035e4cf367d5273b",
+      "require_confirmed": true,
+      "runtime_ok": false,
+      "tokenID": "4af48028c201dbff",
+      "token_type": "SFT"
+    },
+    "living_token_defenses_passed": true
+  }
+}

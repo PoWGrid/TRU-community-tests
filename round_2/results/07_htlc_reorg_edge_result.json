@@ -1,0 +1,52 @@
+{
+  "test": "07_htlc_reorg_edge",
+  "passed": true,
+  "timestamp_utc": "2026-09-19T18:36:05Z",
+  "details": {
+    "preimage_fuzz_results": {
+      "len_0": {
+        "valid_32byte_preimage": false,
+        "hash160": "b472a266d0bd89c13706a4132ccfb16f7c3b9fcb"
+      },
+      "len_16": {
+        "valid_32byte_preimage": false,
+        "hash160": "9f91b0937ba6728403472e8657b181a93b56024e"
+      },
+      "len_31": {
+        "valid_32byte_preimage": false,
+        "hash160": "f43aa3e5f6e904797117cca96bf47179b921aaec"
+      },
+      "len_32": {
+        "valid_32byte_preimage": true,
+        "hash160": "abe5506df36e2f5f1c96f7162a491cd4b2aa332d"
+      },
+      "len_33": {
+        "valid_32byte_preimage": false,
+        "hash160": "f22fefc3c297ea1c4fa3bdfdafd8e3c0d211fd15"
+      },
+      "len_64": {
+        "valid_32byte_preimage": false,
+        "hash160": "207355001c4e9aeeb687338e71cabe606d5a610d"
+      }
+    },
+    "canonical_htlc_opcodes": [
+      "OP_IF",
+      "OP_HASH160",
+      "OP_EQUALVERIFY",
+      "OP_CHECKSIG",
+      "OP_ELSE",
+      "OP_CHECKLOCKTIMEVERIFY",
+      "OP_DROP",
+      "OP_CHECKSIG",
+      "OP_ENDIF"
+    ],
+    "swap_rpc_guard": "RPC Error [-32601]: Method not found",
+    "reorg_rules": {
+      "EXPLICIT_EXECUTION_GATE_REQUIRED": "ENFORCED",
+      "EXACT_SAME_TX_ONLY": "ENFORCED",
+      "DURABLE_INTENT_BEFORE_NETWORK_MUTATOR": "ENFORCED",
+      "REPEATED_REORG_AFTER_RECONFIRMATION": "ENFORCED"
+    },
+    "htlc_reorg_defenses_passed": true
+  }
+}

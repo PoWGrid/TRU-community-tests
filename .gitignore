@@ -1,18 +1,34 @@
 # Environment & Credentials
 .env
+.env.*
+*.key
+*.pem
+*.priv
 *.dat
 *.enc
 .rpc-cookie*
 
-# Python cache
+# Wallets & Private Keys
+test_wallets/
+*wallet*.json
+!round_1/tokens/kraken_token.json
+
+# Local runtime logs & outputs
+*.log
+*.pid
+latest_run_results/
+*local_run_result.json
+latest_run_*.json
+round_1/latest_run_*.json
+round_1/summary_results.json
+
+# Python cache & build artifacts
 __pycache__/
 *.py[cod]
 *$py.class
 .pytest_cache/
-
-# Local test outputs (when running with user's keys)
-latest_run_results/
-*local_run_result.json
+.venv/
+env/
 
 # OS artifacts
 .DS_Store

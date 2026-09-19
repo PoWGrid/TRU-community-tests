@@ -18,19 +18,23 @@ DEFAULT_KRAKEN_TOKEN_ID = "4af48028c201dbff"
 DEFAULT_KRAKEN_MINT_TXID = "7e4c3fc6c9b4caf18c1bb34773439ceec83246d22e1536ac035e4cf367d5273b"
 
 def load_dotenv():
-    env_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
-    if os.path.exists(env_file):
-        with open(env_file, "r") as f:
-            for line in f:
-                line = line.strip()
-                if not line or line.startswith("#"):
-                    continue
-                if "=" in line:
-                    k, v = line.split("=", 1)
-                    k = k.strip()
-                    v = v.strip().strip('"').strip("'")
-                    if k not in os.environ:
-                        os.environ[k] = v
+    env_paths = [
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
+    ]
+    for env_file in env_paths:
+        if os.path.exists(env_file):
+            with open(env_file, "r") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    if "=" in line:
+                        k, v = line.split("=", 1)
+                        k = k.strip()
+                        v = v.strip().strip('"').strip("'")
+                        if k not in os.environ:
+                            os.environ[k] = v
 
 load_dotenv()
 

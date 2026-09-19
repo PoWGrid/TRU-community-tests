@@ -9,6 +9,7 @@ Common Utilities for TRU Community Test Suite
 
 import os
 import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import json
 import time
 import struct
@@ -81,6 +82,10 @@ def sign_digest_der(privkey_hex: str, digest32: bytes) -> str:
 
 # Active User Key & Address Derived Automatically from .env / CLI / Defaults
 USER_PRIVKEY_HEX = config.PRIVATE_KEY
+if not USER_PRIVKEY_HEX:
+    import secrets
+    USER_PRIVKEY_HEX = f"{secrets.randbits(256):064x}"
+
 USER_PUBKEY_BYTES, USER_PUBKEY_HEX = privkey_to_pubkey(USER_PRIVKEY_HEX)
 USER_ADDRESS = pubkey_to_address(USER_PUBKEY_BYTES)
 TARGET_TOKEN_ID = config.TOKEN_ID
@@ -99,9 +104,10 @@ def get_rpc_auth_token():
     if config.RPC_COOKIE_PATH:
         paths.append(config.RPC_COOKIE_PATH)
     paths.extend([
+        os.path.expanduser("~/.tru/.rpc-cookie-21832"),
         os.path.expanduser("~/.tru/rpc-cookie-21832"),
-        "/home/user/git_test/TRU/docker-node/data/.rpc-cookie-21832",
-        "../TRU/docker-node/data/.rpc-cookie-21832",
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "workspace", "docker-node", "data", ".rpc-cookie-21832")),
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "nodes", "core", "docker-node", "data", ".rpc-cookie-21832")),
         "./data/.rpc-cookie-21832"
     ])
     for p in paths:

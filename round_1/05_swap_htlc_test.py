@@ -92,11 +92,21 @@ def run_test():
     # 3. Execution of Official TRU Swap Regression Suites
     print("\n[*] 3. Running Official Swap Reorg Regression Tests...")
     
+    swap_dir_candidates = [
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "nodes", "core", "swap")),
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "workspace", "swap")),
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "swap")),
+        "./swap"
+    ]
+    swap_dir = next((d for d in swap_dir_candidates if os.path.isdir(d)), None)
+    if not swap_dir:
+        raise FileNotFoundError("Could not find TRU Core swap directory in standard locations")
+
     # 3A: swap/reorg_swap_01c_selftest.py
-    swap_script_path = "/home/user/git_test/TRU/swap/reorg_swap_01c_selftest.py"
-    print(f"    [*] Executing: {os.path.basename(swap_script_path)}...")
+    swap_script_path = os.path.join(swap_dir, "reorg_swap_01c_selftest.py")
+    print(f"    [*] Executing: {os.path.basename(swap_script_path)} from {swap_dir}...")
     p1 = subprocess.run([sys.executable, swap_script_path],
-                        cwd="/home/user/git_test/TRU/swap",
+                        cwd=swap_dir,
                         capture_output=True, text=True)
     assert p1.returncode == 0, f"Swap 01c failed: {p1.stderr}"
     p1_pass_lines = [l.strip() for l in p1.stdout.splitlines() if "PASS" in l or "OK" in l]
@@ -105,10 +115,10 @@ def run_test():
         print(f"           - {l}")
 
     # 3B: swap/reorg_exit_01c_selftest.py
-    exit_script_path = "/home/user/git_test/TRU/swap/reorg_exit_01c_selftest.py"
+    exit_script_path = os.path.join(swap_dir, "reorg_exit_01c_selftest.py")
     print(f"\n    [*] Executing: {os.path.basename(exit_script_path)}...")
     p2 = subprocess.run([sys.executable, exit_script_path],
-                        cwd="/home/user/git_test/TRU/swap",
+                        cwd=swap_dir,
                         capture_output=True, text=True)
     assert p2.returncode == 0, f"Exit 01c failed: {p2.stderr}"
     p2_pass_lines = [l.strip() for l in p2.stdout.splitlines() if "PASS" in l]

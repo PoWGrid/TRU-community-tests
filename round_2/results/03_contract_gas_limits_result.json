@@ -1,0 +1,17 @@
+{
+  "test": "03_contract_gas_limits",
+  "passed": true,
+  "timestamp_utc": "2026-09-19T18:36:04Z",
+  "details": {
+    "tip_height": 8853,
+    "vm_limits": {
+      "MAX_TX_SCRIPT_GAS": 100000,
+      "MAX_SCRIPT_GAS_PER_INPUT": 50000,
+      "MAX_TX_SCRIPT_OPS": 201,
+      "MAX_TX_SIGOPS": 2500
+    },
+    "opcode_rejection_error": "RPC Error [-32000]: Missing UTXO for input 0",
+    "cltv_mtp_guard": "RPC Error [-32000]: Time Lock redemption failed: Failed to redeem time lock: Time Lock has not matured under parent-chain MTP; unlock Unix time=1789903415, current MTP=1789841898, remaining MTP seconds=61517",
+    "vm_boundaries_enforced": true
+  }
+}

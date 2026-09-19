@@ -1,0 +1,11 @@
+{
+  "test": "06_did_malleability",
+  "passed": true,
+  "timestamp_utc": "2026-09-19T18:36:05Z",
+  "details": {
+    "low_s_verified": true,
+    "high_s_error": "RPC Error [-32032]: Invalid DID ownership signature",
+    "non_canonical_der_error": "RPC Error [-32602]: signature must be strict DER hex",
+    "crypto_malleability_defenses_verified": true
+  }
+}
