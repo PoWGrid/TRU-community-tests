@@ -1,0 +1,31 @@
+{
+  "test_name": "01_truscriptions",
+  "status": "PASS",
+  "txid": "f8bb219df1e278967d3fcfd82c5e4c10856fb3fcd2e64a995c3b37a5f5d0a498",
+  "owner": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+  "block_height_broadcast": 8472,
+  "fee_paid_tru": 0.001,
+  "inscription_details": {
+    "blockHeight": 8473,
+    "contentType": "text/plain",
+    "data": "{\"protocol\":\"truscription-v1\",\"op\":\"inscribe\",\"title\":\"Community Testnet Verification\",\"author\":\"KRAKEN Commander\",\"provenance\":\"Epoch 1 SFT Holder\",\"wallet\":\"TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr\",\"timestamp\":1789817242,\"declaration\":\"TRU Core protocol validation: Inscriptions, SFT Living Tokens, Magic Locks & Mobile Mining.\"}",
+    "inscriptionIndex": 3,
+    "metadata": {
+      "creationTxid": "f8bb219df1e278967d3fcfd82c5e4c10856fb3fcd2e64a995c3b37a5f5d0a498",
+      "currentTxid": "f8bb219df1e278967d3fcfd82c5e4c10856fb3fcd2e64a995c3b37a5f5d0a498",
+      "data": "{\"protocol\":\"truscription-v1\",\"op\":\"inscribe\",\"title\":\"Community Testnet Verification\",\"author\":\"KRAKEN Commander\",\"provenance\":\"Epoch 1 SFT Holder\",\"wallet\":\"TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr\",\"timestamp\":1789817242,\"declaration\":\"TRU Core protocol validation: Inscriptions, SFT Living Tokens, Magic Locks & Mobile Mining.\"}",
+      "height": 8473,
+      "inscriptionIndex": 3,
+      "owner": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+      "satNumber": 42365000000000,
+      "sizeBytes": 326,
+      "timestamp": 1789817242,
+      "type": "TRUSCRIPT"
+    },
+    "owner": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+    "satNumber": -557407744,
+    "sizeBytes": 326,
+    "timestamp": 1789817242,
+    "txid": "f8bb219df1e278967d3fcfd82c5e4c10856fb3fcd2e64a995c3b37a5f5d0a498"
+  }
+}

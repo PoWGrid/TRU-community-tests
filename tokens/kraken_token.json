@@ -1,0 +1,48 @@
+{
+  "tokenID": "4af48028c201dbff",
+  "txid": "7e4c3fc6c9b4caf18c1bb34773439ceec83246d22e1536ac035e4cf367d5273b",
+  "block_height": 4859,
+  "block_hash": "2bf10d6bf585890395bbb102ae1c77bc4d31e07e1734ae4b8f44ab0000000000",
+  "name": "Monster from the Deep",
+  "symbol": "KRAKEN",
+  "type": "SFT",
+  "supply": 1000000,
+  "decimals": 0,
+  "owner": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+  "gas_wallet_index": 125,
+  "fee_paid_atoms": 70000,
+  "fee_paid_tru": "0.00070000",
+  "status": "CONFIRMED_ON_CHAIN",
+  "visual_assets": {
+    "cdn_url": "https://iili.io/no3LpOQ.jpg",
+    "ipfs_uri": "ipfs://Qmepr9fw2p4jfVbEyjP5bHX6deMM7SUMHn8gJcvLHbWi4b",
+    "ipfs_cid_v0": "Qmepr9fw2p4jfVbEyjP5bHX6deMM7SUMHn8gJcvLHbWi4b",
+    "ipfs_cid_v1": "bafybeifujnqk3opq4h2soo23zjaj5dzx62dlxr3qnkcy55swq735ld52jm",
+    "ipfs_gateway_public": "https://ipfs.io/ipfs/Qmepr9fw2p4jfVbEyjP5bHX6deMM7SUMHn8gJcvLHbWi4b",
+    "ipfs_gateway_cloudflare": "https://cloudflare-ipfs.com/ipfs/Qmepr9fw2p4jfVbEyjP5bHX6deMM7SUMHn8gJcvLHbWi4b",
+    "ipfs_local_gateway": "http://127.0.0.1:8088/ipfs/Qmepr9fw2p4jfVbEyjP5bHX6deMM7SUMHn8gJcvLHbWi4b",
+    "original_image_3_8mb": {
+      "ipfs_cid_v0": "Qmb48WbrLEyWycXsxWPRKydyEqPbZXs9w5L1riGUdpsbbD",
+      "ipfs_cid_v1": "bafybeiabjpdumqm3mfygo3gon75uxqk5z2kze5q3ygo5qqtwvyydh2zqde"
+    }
+  },
+  "onchain_metadata": {
+    "amount": "1000000",
+    "controllingVout": 1,
+    "tokenID": "4af48028c201dbff",
+    "tokenVout": 0,
+    "type": "SFT",
+    "owner": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+    "version": "1",
+    "meta": {
+      "name": "Monster from the Deep",
+      "symbol": "KRAKEN",
+      "description": "A beast lurking in the deep neural layers of TRU blockchain.",
+      "image": "https://iili.io/no3LpOQ.jpg",
+      "decimals": "0",
+      "ai_version": "1.2",
+      "growth_algorithm": "neural-adaptive",
+      "learning_mode": "on-chain usage patterns"
+    }
+  }
+}

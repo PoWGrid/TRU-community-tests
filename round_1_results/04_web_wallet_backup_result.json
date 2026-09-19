@@ -1,0 +1,21 @@
+{
+  "test_name": "04_web_wallet_backup",
+  "status": "PASS",
+  "address": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+  "pubkey_hex": "02bb9c8820eafef926070b14b8d85fa0cb72b350145063db547c0583ffe2e6408e",
+  "keystore_backup": {
+    "cipher": "aes-256-gcm",
+    "kdf": "pbkdf2",
+    "iterations": 100000
+  },
+  "signed_did_proof": {
+    "address": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+    "created": true,
+    "did": "did:on_tru:e700d587dc5dd2dc",
+    "idempotent": false,
+    "network": "TRUMain",
+    "verifiedOwnership": true,
+    "version": "TRU-DID-REGISTER-V1"
+  },
+  "web_utxo_count": 5
+}

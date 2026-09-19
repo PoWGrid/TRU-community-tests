@@ -1,0 +1,75 @@
+{
+  "test_name": "02_smart_contracts",
+  "status": "PASS",
+  "timelock_contract": {
+    "txid": "acd02a3cf9e388cfe526cd74ead41a82b6a3d220dd86f57d1a9d61f83944ecfa",
+    "contract_address": "acd02a3cf9e388cfe526cd74ead41a82b6a3d220dd86f57d1a9d61f83944ecfa:1",
+    "lock_timestamp": 1789903643,
+    "amount_atoms": 100000000,
+    "script_hex": "041bc3af6ab17576a9149f8b2e42f8348d9539a5315bab514a7b31d9c70488ac",
+    "consensus_lock_enforced": true,
+    "rejection_reason": "RPC Error [-32000]: Time Lock redemption failed: Failed to redeem time lock: Time Lock UTXO not found or already spent"
+  },
+  "voting_contract_analysis": {
+    "live_contract": {
+      "address": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225:1",
+      "amount": 400000000,
+      "blockHash": "7aedd56213d416782cb226a17eeba5d56d883b87aede1ae6b614190500000000",
+      "blockHeight": 684,
+      "classificationSource": "registry",
+      "contractType": "VOTING",
+      "creationTime": 1789340209,
+      "creator": "TPbjgTYifrJ6eEJ96Zy4Ws43Vc9722i8aj",
+      "details": {
+        "family": "voting_v1",
+        "liveAnchor": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225:1",
+        "ownerHash160": "958238380c2aa9e7f636d99d938450080e50f3cc",
+        "stableRoot": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225:1"
+      },
+      "family": "voting_v1",
+      "identifier": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225:1",
+      "isUnspent": true,
+      "liveAnchor": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225:1",
+      "lockReason": "",
+      "lockTime": 0,
+      "name": "Vote: Would you use on-cha",
+      "observedOutpoint": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225:1",
+      "ownerHash160": "958238380c2aa9e7f636d99d938450080e50f3cc",
+      "registryValid": true,
+      "scriptPubKey": "f751",
+      "stableRoot": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225:1",
+      "status": "Active",
+      "timestamp": 1789340209,
+      "txid": "9f77feb0276f07e9c1f1e2dafb3c24ee1ca40adc277930b4fc475f7b8717d225",
+      "type": "VOTING",
+      "vout": 1
+    },
+    "gas_model": {
+      "family": "voting_v1",
+      "limits": {
+        "MAX_TX_SCRIPT_GAS": 100000,
+        "MAX_SCRIPT_GAS_PER_INPUT": 50000,
+        "MAX_TX_SCRIPT_OPS": 201,
+        "MAX_TX_SIGOPS": 2500
+      },
+      "commitment_envelope": {
+        "magic": "TRUCALL",
+        "version": "0x01",
+        "size_bytes": 48,
+        "script_binding": "SHA256(unlockScriptSig)"
+      },
+      "operation_costs": {
+        "base_call_overhead": 2500,
+        "voter_marker_check": 1200,
+        "tally_increment": 800,
+        "state_storage_per_byte": 10
+      },
+      "estimated_vote_gas": 6500,
+      "caller_requirements": [
+        "Signed P2PKH voter input (SIGHASH_ALL)",
+        "Single-vote enforcement per hash160",
+        "Non-payable contract call"
+      ]
+    }
+  }
+}

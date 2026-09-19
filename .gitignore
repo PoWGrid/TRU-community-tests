@@ -1,0 +1,19 @@
+# Environment & Credentials
+.env
+*.dat
+*.enc
+.rpc-cookie*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local test outputs (when running with user's keys)
+latest_run_results/
+*local_run_result.json
+
+# OS artifacts
+.DS_Store
+Thumbs.db

@@ -1,0 +1,36 @@
+{
+  "test_name": "05_swap_htlc",
+  "status": "PASS",
+  "htlc_sample": {
+    "secret_hash160": "97ec7342e8cea88d82aa4b1567ec2b54bd4c8212",
+    "refund_lock_time": 1789824444,
+    "script_hex": "63a91497ec7342e8cea88d82aa4b1567ec2b54bd4c82128821031111111111111111111111111111111111111111111111111111111111111111ac6704bc8dae6ab1752102bb9c8820eafef926070b14b8d85fa0cb72b350145063db547c0583ffe2e6408eac68",
+    "script_size_bytes": 103
+  },
+  "rpc_security_guard": {
+    "guard_enforced": true,
+    "rejection_message": "RPC Error [-32000]: TRU-SWAP RPC disabled: TRU_SWAP_RPC_TOKEN is not configured"
+  },
+  "regression_suites": {
+    "reorg_swap_01c": {
+      "exit_code": 0,
+      "verifications": [
+        "TRU_REORG_SWAP_01C_SELFTEST=PASS",
+        "FIVE_EXPLICIT_TX_STATES=PASS",
+        "TERMINAL_EXACT_TX_OBSERVATION=PASS",
+        "NONTERMINAL_SCANNER_REGRESSION=PASS",
+        "REPEATED_REORG_AFTER_RECONFIRMATION=PASS",
+        "OVERLAY_REOPEN_DURABILITY=PASS"
+      ]
+    },
+    "reorg_exit_01c": {
+      "exit_code": 0,
+      "verifications": [
+        "TRU_REORG_EXIT_01C_SELFTEST=PASS",
+        "EXPLICIT_EXECUTION_GATE_REQUIRED=PASS",
+        "EXACT_SAME_TX_ONLY=PASS",
+        "DURABLE_INTENT_BEFORE_NETWORK_MUTATOR=PASS"
+      ]
+    }
+  }
+}

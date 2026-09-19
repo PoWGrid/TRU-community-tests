@@ -1,0 +1,49 @@
+{
+  "timestamp": 1789817869.4781232,
+  "all_passed": true,
+  "total_duration_sec": 4.18,
+  "results": [
+    {
+      "script": "01_truscriptions_test.py",
+      "description": "TRUSCRIPTIONS (On-Chain Inscriptions)",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_sec": 1.15
+    },
+    {
+      "script": "02_smart_contracts_test.py",
+      "description": "Smart Contracts (TimeLock & Voting Gas Model)",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_sec": 0.14
+    },
+    {
+      "script": "03_token_evolution_test.py",
+      "description": "Living Token Evolution (SFT KRAKEN Epoch 1 -> 2)",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_sec": 1.07
+    },
+    {
+      "script": "04_web_wallet_backup_test.py",
+      "description": "Web Wallet & Backups (Client-Side Custody)",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_sec": 0.12
+    },
+    {
+      "script": "05_swap_htlc_test.py",
+      "description": "Cross-Chain HTLC Swaps & Bridges (Reorg Safety)",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_sec": 1.61
+    },
+    {
+      "script": "06_pwa_mobile_miner_test.py",
+      "description": "Mobile PWA & Browser Mining (WEB-MINER-01)",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_sec": 0.08
+    }
+  ]
+}

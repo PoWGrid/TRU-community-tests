@@ -1,0 +1,11 @@
+{
+  "test_name": "06_pwa_mobile_miner",
+  "status": "PASS",
+  "browser_miner_address": "TQWoB1FwWSFp5hDcFV5FzNvQG6kne2sxJr",
+  "target_height": 8473,
+  "coinbase_reward_tru": 50.0011,
+  "browser_work_version": "TRU-WEB-MINER-01",
+  "header_bytes": 80,
+  "simulated_mobile_hashrate_khs": 2114.24,
+  "submission_spec_validated": true
+}
